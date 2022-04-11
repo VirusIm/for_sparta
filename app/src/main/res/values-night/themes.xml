@@ -1,0 +1,31 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ChatD" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/black_lighter</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#2B2B2B</item>
+        <item name="colorSecondaryVariant">@color/white</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="bottomNavigationStyle">@style/BottomNavStyle</item>
+        <item name="buttonStyle">@style/btnStyle</item>
+        <item name="bubbleColor">@color/black_lighter</item>
+    </style>
+
+
+
+
+    <style name="btnStyle">
+        <item name="android:textColor">@color/black</item>
+        <item name="backgroundTint">@color/teal_200</item>
+    </style>
+
+    <style name="BottomNavStyle">
+        <item name="android:background">#2B2B2B</item>
+    </style>
+</resources>

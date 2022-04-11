@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_main"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+
+        app:itemTextColor="@drawable/serlector"
+        app:itemIconTint="@drawable/serlector"
+        app:menu="@menu/bottom_menu"
+        />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnSend"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nav_bar"
+        android:layout_alignParentEnd="true"
+        android:clickable="true"
+        android:contentDescription="@string/send_btn"
+        android:focusable="true"
+        android:src="@drawable/ic_send_button"
+        android:tint="@android:color/white"
+        app:fabSize="auto" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    android:layout_above="@id/nav_bar"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/btnSend">
+        <EditText
+            android:id="@+id/messageField"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/message_field_hint"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ListView
+        android:id="@+id/list_of_messages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/text_layout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+
+      android:layout_margin="10dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10dp"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll" />
+</RelativeLayout>

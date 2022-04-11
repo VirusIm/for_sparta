@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Spartanci</string>
+    <string name="send_btn">SEND</string>
+    <string name="message_field_hint">Введіть повідомлення</string>
+</resources>

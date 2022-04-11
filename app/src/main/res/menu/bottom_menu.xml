@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/sirenActivity"
+        android:title="Повітряна тривога"
+        android:icon="@drawable/ic_baseline_campaign_24"
+        />
+    <item android:id="@+id/mainActivity"
+        android:title="Чат"
+        android:icon="@drawable/ic_baseline_chat_24"/>
+    <item android:id="@+id/settingsActivity"
+        android:title="Налаштування"
+        android:icon="@drawable/ic_baseline_settings_24"/>
+</menu>
